@@ -1,0 +1,122 @@
+<!-- Assignment :
+Define a table and use of the table , give a example of a table with four rows and colums
+use every attribute and show a clear example of table ....
+
+Answer :
+
+A table is arrangement of set of interreleated records.
+
+Table is important as making a table can make it easy to display scattered records
+in a well arranged manner.
+
+Table is made in HTML using "<table>" tag. -->
+
+
+<!-- Ex.
+Suppose defining a table storing information of students... -->
+
+
+<html>
+
+<head> Students table </head>
+
+<body>
+    <table border="1" style="text-align: right; padding: auto; border-color: red;"> <!-- Definaton of table starts -->
+
+
+        <!-- In table tag we can specify the attributes of the table,
+        Border if not applied the table will get dispalyed without borders.
+        You can change the thickness of borders by increasing the value of border attribute. -->
+
+        <tr> <!--  tr tag defines row of a table -->
+
+            <th> <!--  th tag defines heading of column of a table , it is always applied
+                        for the first row -->
+                Roll_no.
+            </th>
+            <th>
+                Name of Student
+            </th>
+            <th>
+                Age
+            </th>
+            <th>
+                Class
+            </th>
+        </tr> <!-- ends entering the values in row -->
+
+        <tr> <!--  new row is started -->
+            <td> <!--  td tag defines the data to be stored in a block of a row in a column of a table -->
+                21
+            </td>
+            <td>
+                Kiran Bhosale <!-- value stored in block -->
+            </td>
+            <td>
+                18
+            </td>
+            <td>
+                First Year CS
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                22
+            </td>
+            <td style="color: aqua;">
+                Aditya Mohite
+            </td>
+            <td>
+                18
+            </td>
+            <td>
+                First Year CS
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                23
+            </td>
+            <td>
+                Alok Singh
+            </td>
+            <td>
+                19
+            </td>
+            <td>
+                First Year CS
+            </td>
+        </tr>
+        <tr>
+            <td>
+                9
+            </td>
+            <td>
+                Prem Kalambe
+            </td>
+            <td>
+                18
+            </td>
+            <td>
+                Second Year CS
+            </td>
+        </tr>
+    </table> <!-- defination of table ends -->
+
+    <!-- Again we can use every css attribute whether by using inline css or by defining 
+    it in style tag ....  
+
+For Example : style="text-align: right; padding: auto; border-color: red;"
+ in table tag as inline css defines that the text stored in table should be aligned to 
+right and padding of the same must be 'auto' which is default , you can change padding in px 
+according to your choice and it will get applied to all tables ; And border-color defines 
+color of the borders of the table ...
+        Another Example is  : style="color: aqua;" which defines the color of the text 
+        stored in that block must be of aqua color....
+        -->
+
+</body>
+
+</html>
