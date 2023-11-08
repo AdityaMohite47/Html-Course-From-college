@@ -7,6 +7,11 @@
 #     return c 
 
 # x = int(input("Enter a number : "))
-# y = int(input("Enter another number : "))
+# y = int(input("Enter another number : ")
 
-# print("The addithon of first number and second number is : ",add(x,
+a = 1
+
+while a <= 100:
+    a = a+1
+    print(a)
+
