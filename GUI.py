@@ -67,48 +67,48 @@
 
 # Program 1
 
-import tkinter as t
+# import tkinter as t
 
-window1 = t.Tk()
-window1.title("Login Page")
-window1.geometry("700x600")
-
-
-def submit():
-    User = Username.get()
-    Passowrd = Pass.get()
-
-    Username.set("")
-    Pass.set("")
-
-    print(User)
-    print(Passowrd)
-
-    window2 = t.Tk()
-    window1.title("Main Page")
-    window2.geometry("700x600")
-    window2.title("Main Page")
-    l4= t.Label(window2 , text= f"Welcome {User}")
-    l4.pack(side='top')
-    window2.mainloop()
+# window1 = t.Tk()
+# window1.title("Login Page")
+# window1.geometry("700x600")
 
 
-Username = t.StringVar()
-Pass = t.StringVar()
+# def submit():
+#     User = Username.get()
+#     Passowrd = Pass.get()
 
-l1 = t.Label(window1 , text="UserName")
-l2 = t.Label(window1 , text = "Password")
-b = t.Button(window1 , text="Submit" , command=submit)
-e1 = t.Entry(window1 , textvariable=Username)
-e2 = t.Entry(window1 , textvariable=Pass , show='*')
+#     Username.set("")
+#     Pass.set("")
 
-l1.grid(row=0 , column=0)
-e1.grid(row =0 , column=1)
-l2.grid(row= 1 , column=0)
-e2.grid(column=1 , row=1)
-b.grid(row=2 , column=1)
+#     print(User)
+#     print(Passowrd)
 
-window1.mainloop()
+#     window2 = t.Tk()
+#     window1.title("Main Page")
+#     window2.geometry("700x600")
+#     window2.title("Main Page")
+#     l4= t.Label(window2 , text= f"Welcome {User}")
+#     l4.pack(side='top')
+#     window2.mainloop()
+
+
+# Username = t.StringVar()
+# Pass = t.StringVar()
+
+# l1 = t.Label(window1 , text="UserName")
+# l2 = t.Label(window1 , text = "Password")
+# b = t.Button(window1 , text="Submit" , command=submit)
+# e1 = t.Entry(window1 , textvariable=Username)
+# e2 = t.Entry(window1 , textvariable=Pass , show='*')
+
+# l1.grid(row=0 , column=0)
+# e1.grid(row =0 , column=1)
+# l2.grid(row= 1 , column=0)
+# e2.grid(column=1 , row=1)
+# b.grid(row=2 , column=1)
+
+# window1.mainloop()
 
 
 #Program 2
@@ -147,4 +147,161 @@ window1.mainloop()
 # sum_label.grid(row=2 , column=1)
 
 # window1.mainloop()
+
+
+# lecture 5
+
+
+# write a program to create following checkbox : Subjects -> c++ , java , python , DBMS 
+
+# import tkinter as t
+
+# window = t.Tk()
+# window.geometry("300x200")
+# chkbvar = t.IntVar()
+# chkbvar2 = t.IntVar()
+# chkbvar3 = t.IntVar()
+# chkbvar4 = t.IntVar()
+
+# def showsubjects():
+#     a = chkbvar.get()
+#     b = chkbvar2.get()
+#     c = chkbvar3.get()
+#     d = chkbvar4.get()
+
+#     l2 = t.Label(window , text="Selected Subjects are : ")
+#     l2.pack()
+#     l3 = t.Label(window)
+#     l4 = t.Label(window)
+#     l5 = t.Label(window)
+#     l6 = t.Label(window)
+
+#     if a == 1 :
+#         l3.config(text="C++")
+#         l3.pack()
+
+#     if b == 1 :
+#         l4.config(text="Java")
+#         l4.pack()
+    
+#     if c == 1 :
+#        l5.config(text="Python")
+#        l5.pack()
+    
+#     if d == 1 :
+#         l6.config(text="DBMS")
+#         l6.pack()
+
+# l1 = t.Label(window , text="Subject checkbox")
+
+# chkb = t.Checkbutton(window , text="C++" , onvalue=1 , offvalue=0 , height=2 , width=10 , variable=chkbvar)
+# chkb2 = t.Checkbutton(window , text="Java" , onvalue=1 , offvalue=0 , height=2 , width=10 , variable=chkbvar2)
+# chkb3 = t.Checkbutton(window , text="Python" , onvalue=1 , offvalue=0 , height=2 , width=10 , variable=chkbvar3)
+# chkb4 = t.Checkbutton(window , text="DBMS" , onvalue=1 , offvalue=0 , height=2 , width=10 , variable=chkbvar4)
+# submitbutton = t.Button(window , text="Submit" , command=showsubjects)
+
+
+# l1.pack(side='top')
+# chkb.pack()
+# chkb2.pack()
+# chkb3.pack()
+# chkb4.pack()
+# submitbutton.pack()
+
+# window.mainloop()
+
+
+# write a program to create following checkbox : Cities 
+
+# import tkinter as t
+
+# window = t.Tk()
+# window.geometry("300x200")
+# chkbvar = t.IntVar()
+# chkbvar2 = t.IntVar()
+# chkbvar3 = t.IntVar()
+# chkbvar4 = t.IntVar()
+
+# def showcities():
+#     a = chkbvar.get()
+#     b = chkbvar2.get()
+#     c = chkbvar3.get()
+#     d = chkbvar4.get()
+
+#     l2 = t.Label(window , text="Selected Cities are : ")
+#     l2.pack()
+#     l3 = t.Label(window)
+#     l4 = t.Label(window)
+#     l5 = t.Label(window)
+#     l6 = t.Label(window)
+
+#     if a == 1 :
+#         l3.config(text="Mumbai")
+#         l3.pack()
+
+#     if b == 1 :
+#         l4.config(text="Banglore")
+#         l4.pack()
+    
+#     if c == 1 :
+#        l5.config(text="Pune")
+#        l5.pack()
+    
+#     if d == 1 :
+#         l6.config(text="Delhi")
+#         l6.pack()
+
+# l1 = t.Label(window , text="Subject checkbox")
+
+# chkb = t.Checkbutton(window , text="Mumbai" , onvalue=1 , offvalue=0 , height=2 , width=10 , variable=chkbvar)
+# chkb2 = t.Checkbutton(window , text="Banglore" , onvalue=1 , offvalue=0 , height=2 , width=10 , variable=chkbvar2)
+# chkb3 = t.Checkbutton(window , text="Pune" , onvalue=1 , offvalue=0 , height=2 , width=10 , variable=chkbvar3)
+# chkb4 = t.Checkbutton(window , text="Delhi" , onvalue=1 , offvalue=0 , height=2 , width=10 , variable=chkbvar4)
+# submitbutton = t.Button(window , text="Submit" , command=showcities)
+
+
+# l1.pack(side='top')
+# chkb.pack()
+# chkb2.pack()
+# chkb3.pack()
+# chkb4.pack()
+# submitbutton.pack()
+
+# window.mainloop()
+
+
+# Radio button -> Gender 
+
+import tkinter as t
+
+from numpy import var
+
+window = t.Tk()
+window.geometry("300x200")
+
+def showgender():
+    l2 = t.Label(window)
+    if(rdbvar.get() == "Male"):
+        l2.config(text=f"Gender is {rdbvar.get()}")
+    elif(rdbvar.get() == "Female"):
+        l2.config(text=f"Gender is {rdbvar.get()}")
+    else:
+        l2.config(text="you don't prefer to say your gender")
+
+    l2.pack()
+        
+        
+
+rdbvar = t.StringVar()
+l1 = t.Label(window , text="Gender Selection")
+rdb = t.Radiobutton(window , text="Male" , value="Male"  , variable=rdbvar)
+rdb2 = t.Radiobutton(window , text="Female" , value="Female" , variable=rdbvar)
+submitbutton = t.Button(window , text="Submit" , command=showgender)
+
+l1.pack(side='top')
+rdb.pack()
+rdb2.pack()
+submitbutton.pack()
+
+window.mainloop()
 
